@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/castaway-react/static/css/main.1271358b.css",
+    "main.js": "/castaway-react/static/js/main.b7c9d56e.js",
+    "static/media/host-image.png": "/castaway-react/static/media/host-image.a954e4a0ce0c3fb5e820.png",
+    "static/media/top-img.png": "/castaway-react/static/media/top-img.374d5da155457bced7ce.png",
+    "static/media/DMSans-Regular.woff": "/castaway-react/static/media/DMSans-Regular.fec2f95313522bc45ce6.woff",
+    "static/media/DMSans-SemiBold.woff": "/castaway-react/static/media/DMSans-SemiBold.259a5aa1c6a683ed1162.woff",
+    "static/media/DMSans-SemiBold.woff2": "/castaway-react/static/media/DMSans-SemiBold.0e23f4482fc3d8802bd6.woff2",
+    "static/media/DMSans-Regular.woff2": "/castaway-react/static/media/DMSans-Regular.477d7d8fbc20fc119a82.woff2",
+    "static/media/logo.svg": "/castaway-react/static/media/logo.70dd17519638dd02b69650f8bb55e6f1.svg",
+    "static/media/cloud.svg": "/castaway-react/static/media/cloud.dbebf014955d26c17bdf0bd6b8ece3fd.svg",
+    "static/media/apple-podcast.svg": "/castaway-react/static/media/apple-podcast.09ff3237fb2488b6eb374913a1fb6750.svg",
+    "static/media/aol-radio.svg": "/castaway-react/static/media/aol-radio.95878eb9040a3326acad2b8c001452cc.svg",
+    "static/media/spotify.svg": "/castaway-react/static/media/spotify.413e3ad81a34c2fbf0b8a5e479c04092.svg",
+    "static/media/lines.svg": "/castaway-react/static/media/lines.ac188ce944d0808b0a64.svg",
+    "static/media/lines-down.svg": "/castaway-react/static/media/lines-down.c6deabddd886f40f6d58.svg",
+    "static/media/onesignal.svg": "/castaway-react/static/media/onesignal.f3db64ac5fed97baf8b96acae43816c9.svg",
+    "static/media/instagram.svg": "/castaway-react/static/media/instagram.ddba0bcd9fbf140e2a83c8cf1563c4c6.svg",
+    "static/media/underline.svg": "/castaway-react/static/media/underline.1ae450ec0fe81ef83b2e.svg",
+    "static/media/twitter.svg": "/castaway-react/static/media/twitter.574c1f701b2f94886f3370c73cb633d4.svg",
+    "static/media/rate.svg": "/castaway-react/static/media/rate.6812ee420710a7230b3d.svg",
+    "index.html": "/castaway-react/index.html",
+    "static/media/facebook.svg": "/castaway-react/static/media/facebook.5af5659b1d481d1457d7c877e70e7198.svg",
+    "main.1271358b.css.map": "/castaway-react/static/css/main.1271358b.css.map",
+    "main.b7c9d56e.js.map": "/castaway-react/static/js/main.b7c9d56e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1271358b.css",
+    "static/js/main.b7c9d56e.js"
+  ]
+}
