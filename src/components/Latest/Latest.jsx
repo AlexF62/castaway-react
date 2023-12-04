@@ -8,6 +8,7 @@ const Latest = () => {
   return (
     <section id="latest" className="latest">
       <div className="container">
+        {/* убери пробелы перед классами */}
         <div className=" latest__inner">
           <div className=" latest__text">
             <div className=" latest__text-left">
