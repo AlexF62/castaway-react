@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import logoImg from '../icons/logo.svg';
+import logoImg from '../../images/logo.svg';
 import './header.scss';
 
 const Header = () => {
@@ -12,6 +12,26 @@ const Header = () => {
     const handleNavLinkClick = () => {
         setNavOpen(!isNavOpen);
     };
+
+    const mockedMenuItems = [
+        {
+            link: '#home',
+            text: 'Home',
+        },
+
+        {
+            link: '#latest',
+            text: 'Episodes',
+        },
+        {
+            link: '#about',
+            text: 'About',
+        },
+        {
+            link: '#contact',
+            text: 'Contact',
+        },
+    ];
 
     return (
         <header className='header'>
@@ -31,38 +51,17 @@ const Header = () => {
                         }`}
                     >
                         <ul className='menu__list'>
-                            <li
-                                className='menu__list-item'
-                                onClick={handleNavLinkClick}
-                            >
-                                <a href='#home' className='menu__link'>
-                                    Home
-                                </a>
-                            </li>
-                            <li
-                                className='menu__list-item'
-                                onClick={handleNavLinkClick}
-                            >
-                                <a href='#latest' className='menu__link'>
-                                    Episodes
-                                </a>
-                            </li>
-                            <li
-                                className='menu__list-item'
-                                onClick={handleNavLinkClick}
-                            >
-                                <a href='#about' className='menu__link'>
-                                    About
-                                </a>
-                            </li>
-                            <li
-                                className='menu__list-item'
-                                onClick={handleNavLinkClick}
-                            >
-                                <a href='#contact' className='menu__link'>
-                                    Contact
-                                </a>
-                            </li>
+                            {mockedMenuItems.map((item, index) => (
+                                <li
+                                    className='menu__list-item'
+                                    onClick={handleNavLinkClick}
+                                    key={index}
+                                >
+                                    <a href={item.link} className='menu__link'>
+                                        {item.text}
+                                    </a>
+                                </li>
+                            ))}
                         </ul>
                     </nav>
                     <button

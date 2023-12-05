@@ -1,5 +1,4 @@
-const reviewsData = [
-    {
+const reviewsCards = [{
         id: 1,
         title: 'I can’t recommend this podcast enough',
         name: 'Betty Lacey',
@@ -30,4 +29,4 @@ const reviewsData = [
     },
 ];
 
-export default reviewsData;
+export default reviewsCards;

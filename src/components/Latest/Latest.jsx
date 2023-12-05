@@ -1,8 +1,7 @@
 import React from 'react';
-
 import './latest.scss';
-
-import EpisodesCard, { episodesData } from '../EpisodesCards/EpisodesCard.jsx';
+import EpisodesCard from '../EpisodesCards/EpisodesCard';
+import episodesData from '../utils/episodesMock.js';
 
 const Latest = () => {
     return (

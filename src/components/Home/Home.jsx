@@ -1,13 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
-import spotify from '../icons/spotify.svg';
-import oneSignal from '../icons/onesignal.svg';
-import cloud from '../icons/cloud.svg';
-import applePodcast from '../icons/apple-podcast.svg';
-import aolRadio from '../icons/aol-radio.svg';
-import homeBg from '../icons/top-img.png';
+import homeBg from '../../images/top-img.png';
 
 import './home.scss';
+import SocialIcons from '../SocialIcons/SocialIcons';
 const Home = () => {
     return (
         <section id='home' className='home'>
@@ -25,24 +21,7 @@ const Home = () => {
                         <div className='home__social'>
                             <div className='home__social-text'>Listen on</div>
                             <div className='home__social-items'>
-                                <a className='home__social-link' href='#'>
-                                    <img src={spotify} alt='spotify' />
-                                </a>
-                                <a className='home__social-link' href='#'>
-                                    <img src={oneSignal} alt='One signal' />
-                                </a>
-                                <a className='home__social-link' href='#'>
-                                    <img src={cloud} alt='cloud' />
-                                </a>
-                                <a className='home__social-link' href='#'>
-                                    <img
-                                        src={applePodcast}
-                                        alt='Apple podcasts'
-                                    />
-                                </a>
-                                <a className='home__social-link' href='#'>
-                                    <img src={aolRadio} alt='AOL Radio' />
-                                </a>
+                                <SocialIcons />
                             </div>
                         </div>
                     </div>

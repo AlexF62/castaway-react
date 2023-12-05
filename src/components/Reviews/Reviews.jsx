@@ -1,24 +1,12 @@
 import React from 'react';
 import './reviews.scss';
-import reviewsData from '../Reviewscard/ReviewsCards';
+import ReviewsCards from '../ReviewsCards/ReviewsCards';
 
 const Reviews = () => {
     return (
         <section className='reviews'>
             <div className='container'>
-                <div className='reviews__inner'>
-                    {reviewsData.map((review) => (
-                        <div className='reviews__card' key={review.id}>
-                            <div className='reviews__card-grade'></div>
-                            <span className='reviews__card-title'>
-                                {review.title}
-                            </span>
-                            <span className='reviews__card-name'>
-                                {review.name}
-                            </span>
-                        </div>
-                    ))}
-                </div>
+                <ReviewsCards />
             </div>
         </section>
     );
