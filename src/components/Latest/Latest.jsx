@@ -2,6 +2,8 @@ import React from 'react';
 import './latest.scss';
 import EpisodesCard from '../EpisodesCards/EpisodesCard';
 import episodesData from '../utils/episodesMock.js';
+import Text from '../UI/Text.jsx';
+import Button from '../UI/Button.jsx';
 
 const Latest = () => {
     return (
@@ -10,14 +12,15 @@ const Latest = () => {
                 <div className=' latest__inner'>
                     <div className=' latest__text'>
                         <div className=' latest__text-left'>
-                            <div className=' latest__text-title'>
-                                Latest episodes
-                            </div>
+                            <Text
+                                text={'Latest episodes'}
+                                className={' latest__text-title'}
+                            />
                         </div>
                         <div className=' latest__button'>
-                            <button className=' latest__button-text'>
+                            <Button className={'latest__button-text'}>
                                 View all episodes
-                            </button>
+                            </Button>
                         </div>
                     </div>
                     {episodesData.map((episode) => (

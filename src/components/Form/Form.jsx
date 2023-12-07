@@ -1,14 +1,20 @@
 import React from 'react';
+import Text from '../UI/Text';
+import './form.scss';
 
 const Form = () => {
     return (
         <>
             <div className='form'>
                 <div className=' form__desc'>
-                    <div className=' form__dec-text'>Email Newsletter</div>
-                    <div className=' form__desc-subtitle'>
-                        Subscribe for updates
-                    </div>
+                    <Text
+                        className={'form__dec-text'}
+                        text={'Email Newsletter'}
+                    />
+                    <Text
+                        className={'form__desc-subtitle'}
+                        text={'Subscribe for updates'}
+                    />
                 </div>
 
                 <form action='#' className='form__fill'>

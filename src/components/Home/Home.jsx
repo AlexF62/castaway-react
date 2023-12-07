@@ -1,10 +1,17 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import homeBg from '../../images/top-img.png';
-
 import './home.scss';
 import SocialIcons from '../SocialIcons/SocialIcons';
+import Text from '../UI/Text';
+
 const Home = () => {
+    const socialNetworks = [
+        'spotify',
+        'apple',
+        'cloud',
+        'aolRadio',
+        'oneSignal',
+    ];
     return (
         <section id='home' className='home'>
             <div className='container'>
@@ -14,14 +21,17 @@ const Home = () => {
                     </div>
                     <div className='home__block'>
                         <div className='home__block-subtitle'>
-                            Take your podcast to the{' '}
-                            <span className='next'>next</span>{' '}
+                            Take your podcast to the
+                            <span className='next'>next</span>
                             <span className='level'>level</span>
                         </div>
                         <div className='home__social'>
-                            <div className='home__social-text'>Listen on</div>
+                            <Text
+                                className={'home__social-text'}
+                                text={'Listen on'}
+                            />
                             <div className='home__social-items'>
-                                <SocialIcons />
+                                <SocialIcons socialNetworks={socialNetworks} />
                             </div>
                         </div>
                     </div>

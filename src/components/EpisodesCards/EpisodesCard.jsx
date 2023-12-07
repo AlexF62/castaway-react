@@ -11,12 +11,14 @@ const EpisodesCard = ({ episode }) => (
                 />
             </div>
             <div className='episodes__main'>
-                <div className='episodes__main-text'>{episode.text}</div>
-                <div className='episodes__main-number'>{episode.number}</div>
-                <div className='episodes__main-subtitle'>
+                <span className='episodes__main-text'>{episode.text}</span>
+                <span className='episodes__main-number'>{episode.number}</span>
+                <span className='episodes__main-subtitle'>
                     {episode.subtitle}
-                </div>
-                <div className='episodes__main-desc'>{episode.description}</div>
+                </span>
+                <span className='episodes__main-desc'>
+                    {episode.description}
+                </span>
                 <button className='episodes__main-link'>
                     View Episode Details
                 </button>

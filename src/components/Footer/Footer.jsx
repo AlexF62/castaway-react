@@ -7,7 +7,15 @@ import './footer.scss';
 import footerLogo from '../../images/logo.svg';
 import NavLink from '../NavLink/NavLink';
 import SocialIcons from '../SocialIcons/SocialIcons';
-const Footer = ({ menuItems }) => {
+
+const Footer = () => {
+    const socialNetworks = [
+        'spotify',
+        'apple',
+        'cloud',
+        'aolRadio',
+        'oneSignal',
+    ];
     return (
         <footer id='contact' className='footer'>
             <div className='container'>
@@ -34,12 +42,12 @@ const Footer = ({ menuItems }) => {
 
                     <div className='footer-header footer__header'>
                         <nav data-nav className='footer-nav footer__menu'>
-                            <NavLink menuItems={menuItems} />
+                            <NavLink />
                         </nav>
                     </div>
 
                     <div className=' footer__social-icons'>
-                        <SocialIcons />
+                        <SocialIcons socialNetworks={socialNetworks} />
                     </div>
                 </div>
             </div>
