@@ -1,19 +1,11 @@
 import React from 'react';
-import ReviewsItems from '../utils/ReviewsItems.js';
+import Text from '../UI/Text';
 
-const ReviewCard = ({ id, title, name }) => (
+const ReviewsCards = ({ id, title, name }) => (
     <div className='reviews__card' key={id}>
         <div className='reviews__card-grade'></div>
-        <span className='reviews__card-title'>{title}</span>
-        <span className='reviews__card-name'>{name}</span>
-    </div>
-);
-
-const ReviewsCards = () => (
-    <div className='reviews__inner'>
-        {ReviewsItems.map((review) => (
-            <ReviewCard {...review} />
-        ))}
+        <Text className={'reviews__card-title'} children={title} />
+        <Text className={'reviews__card-name'} children={name} />
     </div>
 );
 

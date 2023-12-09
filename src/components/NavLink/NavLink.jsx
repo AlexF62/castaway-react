@@ -1,22 +1,22 @@
-import { menuItems } from '../utils/menuItems.js';
+import React from 'react';
 
-const NavLink = () => {
+const NavLink = ({ menuItems }) => {
     return (
         <>
-            {menuItems.reduce((acc, menu, index) => {
-                const menuList = menu.map((item, itemIndex) => (
-                    <li key={itemIndex} className='footer__menu__list-item'>
-                        <a href={item.href} className='footer__menu__list-link'>
-                            {item.text}
-                        </a>
-                    </li>
-                ));
-                return acc.concat(
-                    <ul key={index} className='footer__menu-list'>
-                        {menuList}
-                    </ul>
-                );
-            }, [])}
+            {menuItems.map((menu, index) => (
+                <ul key={index} className='footer__menu-list'>
+                    {menu.map((item, itemIndex) => (
+                        <li key={itemIndex} className='footer__menu__list-item'>
+                            <a
+                                href={item.href}
+                                className='footer__menu__list-link'
+                            >
+                                {item.text}
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+            ))}
         </>
     );
 };

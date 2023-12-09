@@ -7,6 +7,7 @@ import './footer.scss';
 import footerLogo from '../../images/logo.svg';
 import NavLink from '../NavLink/NavLink';
 import SocialIcons from '../SocialIcons/SocialIcons';
+import { menuItems } from '../utils/menuItems';
 
 const Footer = () => {
     const socialNetworks = [
@@ -16,6 +17,7 @@ const Footer = () => {
         'aolRadio',
         'oneSignal',
     ];
+
     return (
         <footer id='contact' className='footer'>
             <div className='container'>
@@ -42,7 +44,7 @@ const Footer = () => {
 
                     <div className='footer-header footer__header'>
                         <nav data-nav className='footer-nav footer__menu'>
-                            <NavLink />
+                            <NavLink menuItems={menuItems} />
                         </nav>
                     </div>
 

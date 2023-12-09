@@ -18,9 +18,10 @@ const Latest = () => {
                             />
                         </div>
                         <div className=' latest__button'>
-                            <Button className={'latest__button-text'}>
-                                View all episodes
-                            </Button>
+                            <Button
+                                className={'latest__button-text'}
+                                children={'View all episodes'}
+                            />
                         </div>
                     </div>
                     {episodesData.map((episode) => (

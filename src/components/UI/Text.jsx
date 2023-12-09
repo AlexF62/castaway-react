@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Text = ({ className, text, style, width }) => {
+const Text = ({ className, children, style, weight }) => {
     return (
-        <span className={className} style={style} width={width}>
-            {text}
+        <span className={className} style={style} weight={weight}>
+            {children}
         </span>
     );
 };

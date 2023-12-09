@@ -13,7 +13,7 @@ const Form = () => {
                     />
                     <Text
                         className={'form__desc-subtitle'}
-                        text={'Subscribe for updates'}
+                        children={'Subscribe for updates'}
                     />
                 </div>
 
