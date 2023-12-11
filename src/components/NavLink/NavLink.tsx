@@ -1,6 +1,15 @@
 import React from 'react';
 
-const NavLink = ({ menuItems }) => {
+interface MenuItem {
+    href: string;
+    text: string
+}
+
+interface NavLinkProps {
+        menuItems: MenuItem[][];
+    }
+
+const NavLink: React.FC<NavLinkProps> = ({ menuItems }) => {
     return (
         <>
             {menuItems.map((menu, index) => (
@@ -22,3 +31,5 @@ const NavLink = ({ menuItems }) => {
 };
 
 export default NavLink;
+
+

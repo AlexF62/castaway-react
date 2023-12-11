@@ -2,14 +2,14 @@ import React from 'react';
 import Text from '../UI/Text';
 import './form.scss';
 
-const Form = () => {
+const Form: React.FC = () => {
     return (
         <>
             <div className='form'>
                 <div className=' form__desc'>
                     <Text
                         className={'form__dec-text'}
-                        text={'Email Newsletter'}
+                        children={'Email Newsletter'}
                     />
                     <Text
                         className={'form__desc-subtitle'}
@@ -32,7 +32,7 @@ const Form = () => {
                         placeholder='Email'
                         required
                     />
-                    <button className=' form__fill-button'>Submit</button>
+                    <button type='submit' className=' form__fill-button'>Submit</button>
                 </form>
             </div>
         </>
@@ -40,3 +40,6 @@ const Form = () => {
 };
 
 export default Form;
+
+
+

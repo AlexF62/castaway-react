@@ -9,8 +9,8 @@ import NavLink from '../NavLink/NavLink';
 import SocialIcons from '../SocialIcons/SocialIcons';
 import { menuItems } from '../utils/menuItems';
 
-const Footer = () => {
-    const socialNetworks = [
+const Footer: React.FC = () => {
+    const socialNetworks:any[] = [
         'spotify',
         'apple',
         'cloud',
@@ -58,3 +58,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
+

@@ -1,7 +1,18 @@
 import React from 'react';
 import Text from '../UI/Text';
 
-const EpisodesCard = ({ episode }) => (
+
+interface EpisodeCardProps {
+    episode: {
+        imageSrc: string;
+        text: string;
+        number:string;
+        subtitle: string;
+        description: string
+    }
+}
+
+const EpisodesCard: React.FC<EpisodeCardProps> = ({ episode }) => (
     <div className='episodes'>
         <div className='episodes__inner'>
             <div className='episodes__item'>
@@ -37,3 +48,7 @@ const EpisodesCard = ({ episode }) => (
 );
 
 export default EpisodesCard;
+
+
+
+

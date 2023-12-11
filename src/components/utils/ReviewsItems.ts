@@ -1,4 +1,12 @@
- export const reviewsItems = [{
+export interface Review {
+    id: number;
+    title: string;
+    name: string;
+ }
+
+ export const reviewsItems:Review[] = [{
+
+
          id: 1,
          title: 'I can’t recommend this podcast enough',
          name: 'Betty Lacey',
@@ -11,6 +19,7 @@
      {
          id: 3,
          title: 'A wealth of audio knowledge',
+         name: 'Jessica Knowl',
      },
      {
          id: 4,
@@ -28,3 +37,9 @@
          name: 'Steven Blast',
      },
  ];
+
+ 
+
+
+
+

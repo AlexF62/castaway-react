@@ -1,11 +1,20 @@
 import React from 'react';
 import './latest.scss';
 import EpisodesCard from '../EpisodesCards/EpisodesCard';
-import episodesData from '../utils/episodesMock.js';
-import Text from '../UI/Text.jsx';
-import Button from '../UI/Button.jsx';
+import episodesData from '../utils/episodesMock';
+import Text from '../UI/Text';
+import Button from '../UI/Button';
 
-const Latest = () => {
+interface Episode {
+    imageSrc: string;
+    id: number;
+    text: string;
+    number: string;
+    subtitle: string;
+    description: string;
+}
+
+const Latest: React.FC = () => {
     return (
         <section id='latest' className='latest'>
             <div className='container'>
@@ -13,7 +22,7 @@ const Latest = () => {
                     <div className=' latest__text'>
                         <div className=' latest__text-left'>
                             <Text
-                                text={'Latest episodes'}
+                                children={'Latest episodes'}
                                 className={' latest__text-title'}
                             />
                         </div>
@@ -24,7 +33,7 @@ const Latest = () => {
                             />
                         </div>
                     </div>
-                    {episodesData.map((episode) => (
+                    {episodesData.map((episode:Episode) => (
                         <EpisodesCard key={episode.id} episode={episode} />
                     ))}
                 </div>
@@ -34,3 +43,4 @@ const Latest = () => {
 };
 
 export default Latest;
+

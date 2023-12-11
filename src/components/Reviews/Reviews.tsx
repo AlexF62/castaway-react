@@ -1,14 +1,14 @@
 import React from 'react';
 import './reviews.scss';
-import ReviewsCards from '../ReviewsCards/ReviewsCards.jsx';
-import reviewsItems from '../utils/ReviewsItems.js';
+import ReviewsCards from '../ReviewsCards/ReviewsCards';
+import {reviewsItems, Review} from '../utils/ReviewsItems';
 
-const Reviews = () => {
+const Reviews: React.FC = () => {
     return (
         <section className='reviews'>
             <div className='container'>
                 <div className='reviews__inner'>
-                    {reviewsItems.map((review) => (
+                    {reviewsItems.map((review: Review) => (
                         <ReviewsCards
                             key={review.id}
                             id={review.id}
@@ -23,3 +23,5 @@ const Reviews = () => {
 };
 
 export default Reviews;
+
+

@@ -1,8 +1,14 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import logoImg from '../../images/logo.svg';
 import './header.scss';
 
-const Header = () => {
+const Header: React.FC = () => {
+
+           interface MenuItem{
+             link: string;
+             text: string;
+           }
+
     const [isNavOpen, setNavOpen] = useState(false);
 
     const handleClick = () => {
@@ -13,7 +19,7 @@ const Header = () => {
         setNavOpen(!isNavOpen);
     };
 
-    const mockedMenuItems = [
+    const mockedMenuItems: MenuItem[] = [
         {
             link: '#home',
             text: 'Home',
@@ -82,3 +88,6 @@ const Header = () => {
 };
 
 export default Header;
+
+
+

@@ -1,4 +1,11 @@
-export const menuItems = [
+interface MenuItem {
+    text: string;
+    href: string;
+}
+
+type Menu = MenuItem[]
+
+export const menuItems: Menu[] = [
     [{
             text: 'Home',
             href: '#home'
@@ -42,3 +49,5 @@ export const menuItems = [
         },
     ],
 ];
+
+

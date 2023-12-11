@@ -5,7 +5,7 @@ import Form from '../Form/Form';
 import { IoIosArrowRoundForward } from 'react-icons/io';
 import Text from '../UI/Text';
 
-const About = () => {
+const About: React.FC = () => {
     return (
         <>
             <section id='section' className='section'>
@@ -29,7 +29,7 @@ const About = () => {
 
                             <Text
                                 className={'about__main-text'}
-                                text={`Jacob has a background in audio engineering, and
+                                children={`Jacob has a background in audio engineering, and
                                 has been podcasting since the early days.`}
                                 style={{
                                     fontSize: '22px',
@@ -40,7 +40,7 @@ const About = () => {
 
                             <Text
                                 className={'about__main-desc'}
-                                text={`He’s here to help you level up your game by
+                                children={`He’s here to help you level up your game by
                                 sharing everything he’s learned along the way.`}
                                 style={{
                                     fontSize: '22px',

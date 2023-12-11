@@ -1,4 +1,13 @@
- const episodesData = [{
+ interface Episode {
+    id: number;
+    imageSrc: string;
+    text: string;
+    number: string
+    subtitle: string;
+    description: string;
+ }
+ 
+ const episodesData: Episode[] = [{
          id: 1,
          imageSrc: '/public/episode3-image.jpg',
          text: 'Gear',
@@ -25,3 +34,4 @@
  ];
 
  export default episodesData
+

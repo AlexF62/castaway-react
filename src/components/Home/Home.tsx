@@ -4,8 +4,8 @@ import './home.scss';
 import SocialIcons from '../SocialIcons/SocialIcons';
 import Text from '../UI/Text';
 
-const Home = () => {
-    const socialNetworks = [
+const Home: React.FC = () => {
+    const socialNetworks:any[] = [
         'spotify',
         'apple',
         'cloud',
@@ -28,7 +28,7 @@ const Home = () => {
                         <div className='home__social'>
                             <Text
                                 className={'home__social-text'}
-                                text={'Listen on'}
+                                children={'Listen on'}
                             />
                             <div className='home__social-items'>
                                 <SocialIcons socialNetworks={socialNetworks} />
@@ -42,3 +42,6 @@ const Home = () => {
 };
 
 export default Home;
+
+
+
